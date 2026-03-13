@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TecnoPulso: periódico digital con las últimas novedades del mundo de la tecnología." />
+  <title>TecnoPulso | Novedades tecnológicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="texture"></div>
+
+  <header class="site-header">
+    <div class="brand-wrap">
+      <p class="kicker">Edición diaria</p>
+      <h1>TecnoPulso</h1>
+      <p class="tagline">El noticiero de las últimas novedades en tecnología</p>
+    </div>
+    <div class="header-meta">
+      <p id="current-date" aria-live="polite"></p>
+      <button id="refresh-btn" type="button">Actualizar titulares</button>
+    </div>
+  </header>
+
+  <nav class="top-nav" aria-label="Secciones">
+    <a href="#ultimas">Últimas</a>
+    <a href="#ia">Inteligencia Artificial</a>
+    <a href="#movil">Móviles</a>
+    <a href="#empresas">Empresas</a>
+    <a href="#opinion">Opinión</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="ultimas">
+      <article class="hero-main reveal">
+        <p class="pill">Titular principal</p>
+        <h2>Los chips de 2 nanómetros abren una nueva carrera por la eficiencia energética</h2>
+        <p>
+          Fabricantes globales adelantan sus hojas de ruta para centros de datos, portátiles y móviles.
+          El impacto: más rendimiento con menor consumo y baterías de mayor duración.
+        </p>
+      </article>
+      <aside class="hero-side reveal delay-1">
+        <h3>Radar rápido</h3>
+        <ul>
+          <li>Nueva regulación de IA en Europa entra en fase operativa.</li>
+          <li>Marcas de automoción integran copilotos con voz en sus nuevos modelos.</li>
+          <li>La computación cuántica logra avances en corrección de errores.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="news-grid" aria-label="Noticias destacadas">
+      <article class="card reveal" id="ia">
+        <h3>Modelos multimodales llegan a los equipos de trabajo</h3>
+        <p>
+          Las herramientas de IA combinan texto, imagen y audio para acelerar tareas de análisis,
+          soporte y creación de contenido empresarial.
+        </p>
+      </article>
+
+      <article class="card reveal delay-1" id="movil">
+        <h3>Teléfonos plegables más finos y resistentes</h3>
+        <p>
+          Nuevos materiales y bisagras de precisión mejoran la durabilidad y reducen el grosor en
+          la próxima generación de dispositivos.
+        </p>
+      </article>
+
+      <article class="card reveal delay-2" id="empresas">
+        <h3>Startups de ciberseguridad captan inversión récord</h3>
+        <p>
+          El mercado prioriza soluciones de protección en tiempo real frente a amenazas automatizadas
+          por inteligencia artificial.
+        </p>
+      </article>
+    </section>
+
+    <section class="ticker reveal" aria-label="Última hora">
+      <span>Última hora</span>
+      <div class="ticker-track" id="ticker-track">
+        <p>Cloud soberana gana protagonismo en gobiernos y banca.</p>
+      </div>
+    </section>
+
+    <section class="opinion reveal" id="opinion">
+      <h3>Análisis</h3>
+      <p>
+        La gran pregunta de 2026 no es si la IA reemplazará tareas, sino cómo empresas y universidades
+        prepararán talento para convivir con flujos de trabajo asistidos por sistemas inteligentes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TecnoPulso. Información tecnológica para lectores curiosos.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
